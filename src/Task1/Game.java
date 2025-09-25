@@ -113,8 +113,8 @@ public class Game {
                 System.out.println("Введите букву");
                 System.out.print("Буква: ");
                 currentLetter = input.nextLine().toLowerCase();
-                if (!isRussianLetter(currentLetter)) {
-                    System.out.println("Неверный ввод, попробуйте еще раз!");
+                if (!isRussianLetter(currentLetter) || usedLetters.contains(currentLetter)) {
+                    System.out.println("Неверный ввод или буква уже введена, попробуйте еще раз!");
                     continue;
                 }
                 break;

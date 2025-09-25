@@ -21,7 +21,7 @@ public class Main {
                     continue;
                 }
                 break;
-            } catch (InputMismatchException e) {
+            } catch (Exception e) {
                 System.out.println("Неккоректный ввод, попробуйте еще раз!");
                 input.nextLine();
             }
@@ -54,7 +54,7 @@ public class Main {
                                 }
                                 rate.setValue(value);
                                 break;
-                            } catch (InputMismatchException e) {
+                            } catch (Exception e) {
                                 System.out.println("Неккоректный ввод, попробуйте еще раз!");
                                 input.nextLine();
                             }
@@ -65,7 +65,7 @@ public class Main {
                     continue;
                 }
                 break;
-            } catch (InputMismatchException e) {
+            } catch (Exception e) {
                 System.out.println("Неккоректный ввод, попробуйте еще раз!");
                 input.nextLine();
             }

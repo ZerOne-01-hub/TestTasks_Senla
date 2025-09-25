@@ -1,5 +1,7 @@
 package Task1;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Game {
@@ -11,6 +13,7 @@ public class Game {
     private int foundLetters = 0;
     private String wordWithGuessedLetters;
     private String currentLetter;
+    private List<String> usedLetters = new ArrayList<>();
 
     public Game(String currentWord) {
         this.currentWord = currentWord;
@@ -117,6 +120,7 @@ public class Game {
                     System.out.println("Неверный ввод или буква уже введена, попробуйте еще раз!");
                     continue;
                 }
+                usedLetters.add(currentLetter);
                 break;
             }
 
